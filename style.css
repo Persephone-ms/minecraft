@@ -1,0 +1,341 @@
+@font-face 
+{
+    font-family: 'Pixel';
+    src: url(/Fontes/Minecrafter-MA3Dw.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.jersey-15-regular {
+  font-family: "Jersey 15", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.press-start-2p-regular {
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+*
+{   
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body 
+{
+    background-image: url('/imagens/best-minecraft-background-ysfxj7voz9cvfs04.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+header 
+{
+    max-width: 90%;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 
+{
+    font-family: 'Pixel', sans-serif;
+    font-size: 6vw;
+    color:rgb(60, 133, 39);
+    text-shadow: 0.05em 0.05em 0 #000, -0.05em 0.05em 0 #000, 0.05em -0.05em 0 #000, -0.05em -0.05em 0 #000;
+    padding: 1.5rem;
+    text-align: center;
+    letter-spacing: 0.15rem;
+}
+
+img.Logo 
+{
+    width: 90%;
+    max-width: 30rem;
+    height: auto;
+    margin-top: 1.5rem;
+    vertical-align: middle;
+}
+
+main 
+{
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+h2 
+{
+    font-family: 'Pixel', sans-serif;
+    font-size: 3rem;
+    color:#FFFFFF;
+    text-align: center;
+    padding: 1rem;
+    font-weight: lighter;
+    text-shadow:    0.05em 0.05em 0 #000, -0.05em 0.05em 0 #000, 0.05em -0.05em 0 #000, -0.05em -0.05em 0 #000;
+    padding: 1rem;
+    letter-spacing: 0.1rem;
+}
+
+ p 
+ {
+    font-family: "Press Start 2P", system-ui;
+    font-size: 1rem;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 0.5rem 1rem 1rem 1rem;
+    text-shadow: 0.05em 0.05em 0 #000, -0.05em 0.05em 0 #000, 0.05em -0.05em 0 #000, -0.05em -0.05em 0 #000;
+}
+
+
+
+.btn-container
+{
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.btn-inicial,.nextQuestion
+{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 50%;
+    max-width: 300px;
+    margin: auto;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.8rem;
+    font-weight:lighter;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.04rem;
+    color: #FFFFFF;
+    font-family:'Pixel', sans-serif;
+    background-color: #3c8527;
+    text-shadow: 0 0.2rem 0 rgb(0 0 0 / 25%);
+    z-index: 1;
+    border: 3px solid #000;
+    box-shadow: 2px 2px 0 #000;
+    transition: transform 0.1s, box-shadow 0.1s;
+    white-space: unset;
+    user-select: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.7s cubic-bezier(0, 0.8, 0.26, 0.99);
+}
+
+.btn-inicial::before,.nextQuestion::before
+{
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    content: "";
+    transition: all 0.7s cubic-bezier(0, 0.8, 0.26, 0.99);
+    z-index: -1;
+    background-color: #008542;
+    box-shadow: 0 -4px rgb(21 108 0 / 50%) inset, 0 4px rgb(82 164 53 / 99%) inset, -4px 0 rgb(82 164 53 / 50%) inset, 4px 0 rgb(21 108 0 / 50%) inset;
+    
+}
+
+.btn-inicial::after,.nextQuestion::after
+{
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    content: "";
+    box-shadow: 0 4px 0 0 rgb(0 0 0 / 15%);
+    transition: 0,7s cubic-bezier(0, 0.8, 0.26, 0.99);
+}
+
+
+.btn-inicial:hover::before, .answer-btn:hover::before, .nextQuestion::before
+{
+    box-shadow: 0 -4px rgb(0 0 0 / 50%) inset, 0 4px rgb(255 255 255 / 20%) inset, -4px 0 rgb(255 255 255 / 20%) inset, 4px 0 rgb(0 0 0 / 50%) inset;
+}
+
+.btn-inicial:hover::after, .answer-btn:hover::after, .nextQuestion:hover::after
+{
+    box-shadow: 0 4px 0 0 rgb(0 0 0 / 15%);
+}
+
+button:not(:disabled):active, .nextQuestion:active
+{
+    transform: translateY(4px);
+    box-shadow: 0 0 0 #000;
+}
+
+button:active::after
+{
+    box-shadow: 0 0px 0 0 rgb(0 0 0 / 15%);
+}
+
+
+.centralizar, .finalcontainer
+{
+    max-width: 90%;
+    margin: 10rem 4rem;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.container, .finalcontainer
+{
+    background-color: rgb(0 0 0 / 50%);
+    width: 100%;
+    max-width: 800px;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    box-shadow: 0 0 2px 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.questions-container, .finalcontainer
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.question
+{
+    font-family: "Jersey 15", sans-serif;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: lighter;
+    padding: 0.5rem;
+}
+
+.answer-container
+{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding: 0.8rem 1.5rem;
+}
+
+.button
+{
+    font-family: "Press Start 2P", system-ui;
+    text-align: center;
+    font-size: 1rem;
+    background-color: #3c8527;
+    box-shadow: 0 0.25rem 0 #1a3d1a; 
+    color: #FFFFFF;
+    border: 0;
+    border-radius: 0.5rem;
+    height: 2rem;
+    transition: filter 0.2s;
+}
+
+.button:not(:disabled):hover
+{
+    filter: brightness(0.8);
+}
+
+.button:disabled
+{
+    cursor: not-allowed;
+}
+
+.nextQuestion
+{
+    font-family:"Jersey 15", sans-serif; 
+    font-size: 2rem; 
+}
+
+.hide { display: none; }
+
+.final{
+    padding: 2rem;
+    font-size: 1.2rem;
+}
+.final span{
+    display: block;
+    margin-top: 1.2rem;
+    font-family: "Press Start 2P", system-ui;
+    font-size: 1rem;
+    color: #FFFFFF;
+}
+    
+
+
+.correct:not(body)
+{
+    background-color: #f5d742; /* cor dourada/brilhante */
+  color: #b33e00; /* contraste escuro */
+  border: none;
+  box-shadow: 0 0 5px #f5d742,
+              0 0 10px #f5d742,
+              0 0 20px #f5d742,
+              0 0 40px #f5d742;
+  transition: 0.3s ease;
+  animation: glowstone 2s infinite alternate;
+}
+
+.incorrect:not(body)
+{
+     background-color: #a80000;
+  color: white;
+  box-shadow: 0 0 10px red,
+              0 0 20px red,
+              0 0 40px darkred;
+  animation: errorGlow 2s infinite alternate;
+}
+
+
+@keyframes glowstone {
+  from {
+    box-shadow: 0 0 5px #f5d742,
+                0 0 10px #f5d742,
+                0 0 20px #f5d742;
+  }
+  to {
+    box-shadow: 0 0 10px #ffef9f,
+                0 0 20px #f5d742,
+                0 0 40px #ffef9f;
+  }
+}
+
+@keyframes errorGlow {
+  from {
+    box-shadow: 0 0 5px red, 0 0 15px darkred;
+  }
+  to {
+    box-shadow: 0 0 10px red, 0 0 20px darkred;
+  }
+}

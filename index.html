@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+   <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"> -->
+
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" type="image/x-icon" href="/imagens/favicon.ico">
+    <title>Jogo de perguntas</title>
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jersey+15&family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="header" class="titulo">
+        <h1>
+            Perguntas sobre<img class="Logo" src="/imagens/Global-Header_MCCB-Logo_300x51.svg" alt="MINECRAFT">
+        </h1>  
+    </header>  
+    <main>
+        <!-- Tela Inicial -->
+    <section id="inicio" class="ativar">
+            <h2>Bem-vindo ao Quiz!</h2>
+            <p>Teste seus conhecimentos com </p>
+            <p>perguntas de múltipla escolha.</p>
+        <div class="btn-container">
+            <button class="btn-inicial">Iniciar</button>
+        </div>
+    </section>
+        <!-- Perguntas -->
+    <section id="quiz" class = " questions hide">
+        <div class = "centralizar">
+         <div class="container">
+          <div class="questions-container ">
+            <span class="question">Pergunta aqui?</span>
+            <div class="answer-container">
+                <button class="button answer">Resposta 1</button>
+                <button class="button answer">Resposta 2</button>
+                <button class="button answer">Resposta 3</button>
+                <button class="button answer">Resposta 4</button>
+            </div>
+            <button class="nextQuestion">Próxima Pergunta</button>
+          </div>
+          <div class = "controls-container">
+
+          </div>
+          </div>
+        </div>
+    
+    </section>
+
+<script src="index.js"></script>
+</body>
+</html>

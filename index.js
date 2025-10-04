@@ -167,7 +167,7 @@ let totalCorrect = 0
 }
 
 function finishGame(){
-   document.body.style.backgroundImage = "url('/imagens/e3ff3148529bb16a1ce5e8bd4ce9f838.jpeg')";
+   document.body.style.backgroundImage = "url('imagens/e3ff3148529bb16a1ce5e8bd4ce9f838.jpeg')";
    const totalQuestions = Questions.length
    const performace = Math.floor (totalCorrect * 100/ totalQuestions)
 

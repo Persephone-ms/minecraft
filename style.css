@@ -1,7 +1,7 @@
 @font-face 
 {
     font-family: 'Pixel';
-    src: url(/Fontes/Minecrafter-MA3Dw.ttf) format('truetype');
+    src: url(Fontes/Minecrafter-MA3Dw.ttf) format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -34,7 +34,7 @@
 
 body 
 {
-    background-image: url('/imagens/best-minecraft-background-ysfxj7voz9cvfs04.jpg');
+    background-image: url('imagens/best-minecraft-background-ysfxj7voz9cvfs04.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;

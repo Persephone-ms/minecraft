@@ -101,7 +101,7 @@ let totalCorrect = 0
 
  function startGame() 
  {
-   document.body.style.backgroundImage = "url('/imagens/minecraft-glowing-caves.png')";
+   document.body.style.backgroundImage = "url('imagens/minecraft-glowing-caves.png')";
    $startGameButton.classList.add("hide");
    $nextQuestionButton.classList.add("hide");
    $inicio.classList.add("hide");
